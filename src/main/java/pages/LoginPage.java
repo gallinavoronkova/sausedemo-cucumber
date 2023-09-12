@@ -10,7 +10,15 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (id = "user-name")
+    @FindBy(id = "user-name")
     public WebElement usernameInputField;
 
+    @FindBy(id = "password")
+    public WebElement passwordInputField;
+
+    @FindBy(id = "login-button")
+    public WebElement loginButton;
+
+    @FindBy(tagName = "h3")
+    public WebElement errorMessage;
 }
